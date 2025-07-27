@@ -1,10 +1,10 @@
-package test.org.fugerit.java.yaml.doc.maven;
+package org.fugerit.java.openapi.doc.maven;
 
 import java.io.File;
 
 import org.apache.maven.plugin.MojoExecutionException;
 import org.fugerit.java.core.function.SafeFunction;
-import org.fugerit.java.yaml.doc.maven.MojoGenerate;
+import org.fugerit.java.openapi.doc.maven.MojoGenerate;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -17,7 +17,7 @@ public class TestMojoGenerate {
 	public void testMojoeGenerate001() {
 		SafeFunction.apply( () -> {
 			MojoGenerate generate = new MojoGenerate();
-			generate.setConfigPath( "src/test/resources/yaml-doc-config.xml" );
+			generate.setConfigPath( "src/test/resources/openapi-doc-config.xml" );
 			generate.setIdCatalog( "sample" );
 			generate.execute();
 			File pdf = new File( "target/sample.pdf" );

@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0] - 2025-07-27
+
+### Changed
+
+- refactor project yaml-doc-maven-plugin into openapi-doc-maven-plugin <https://github.com/fugerit-org/openapi-doc-tool/issues/1>
+
 ### Removed
 
 - [workflow sonar cloud](.github/workflows/sonarcloud-maven.yml)
